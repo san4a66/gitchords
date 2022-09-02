@@ -15,7 +15,15 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
+            $table->string('author');
+            $table->string('title');
+            $table->text('content');
+            $table->unsignedBigInteger('category_id')->nullable();
             $table->timestamps();
+
+
+
+
         });
     }
 
