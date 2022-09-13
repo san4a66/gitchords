@@ -47,6 +47,10 @@
                                         <td>{{$post->id}}</td>
                                     </tr>
                                     <tr>
+                                        <td>Исполнитель</td>
+                                        <td>{{$post->author}}</td>
+                                    </tr>
+                                    <tr>
                                         <td>Название</td>
                                         <td>{{$post->title}}</td>
                                     </tr>
