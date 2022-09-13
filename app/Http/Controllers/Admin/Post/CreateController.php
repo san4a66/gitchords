@@ -8,12 +8,12 @@ use App\Models\Post;
 use App\Models\Tag;
 
 
-class CreateController extends BaseController
+class CreateController extends Controller
 {
     public function __invoke(Post $post)
     {
         $categories = Category::all();
-        $tags = Tag::all();
-        return view('admin.post.create', compact('post','categories','tags'));
+
+        return view('admin.post.create', compact('post','categories'));
     }
 }

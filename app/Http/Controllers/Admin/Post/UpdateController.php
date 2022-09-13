@@ -8,12 +8,12 @@ use App\Models\Post;
 use Illuminate\Support\Facades\Storage;
 
 
-class UpdateController extends BaseController
+class UpdateController extends Controller
 {
         public function __invoke(UpdateRequest $request, Post $post)
     {
         $data = $request->validated();
-        $post = $this->service->update($data,$post);
+        $post = $this->update($data,$post);
 
         return view('admin.post.show', compact('post'));
     }

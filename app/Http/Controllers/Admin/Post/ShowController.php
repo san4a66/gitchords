@@ -7,7 +7,7 @@ use App\Models\Category;
 use App\Models\Post;
 
 
-class ShowController extends BaseController
+class ShowController extends Controller
 {
     public function __invoke(Post $post)
     {
